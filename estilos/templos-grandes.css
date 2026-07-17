@@ -1,0 +1,47 @@
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 0.75rem;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
