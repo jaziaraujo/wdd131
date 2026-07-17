@@ -6,6 +6,16 @@
         align-items: center;
     }
 
+    nav {
+        display: flex;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
