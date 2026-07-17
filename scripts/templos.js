@@ -1,8 +1,11 @@
 
 const currentYear = document.querySelector("#currentyear");
-const modifiedDate = new Date(document.lastModified);
+const lastModified = document.querySelector("#lastModified");
 
-lastModified.textContent = `Última modificação: ${modifiedDate.toLocaleDateString("pt-BR")}`;
+currentYear.textContent = new Date().getFullYear();
+
+const modifiedDate = new Date(document.lastModified);
+lastModified.textContent = `Última modificação: ${modifiedDate.toLocaleString("pt-BR")}`;
 
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
