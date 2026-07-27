@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>República Dominicana</title>
+
+    <meta name="description" content="Página sobre a República Dominicana contendo informações sobre o clima e outras informações relevantes">
+    <meta name="author" content="Jazi de Araujo">
+    <link rel="stylesheet" href="S03/estilos/local.css">
+    <link rel="stylesheet" href="S03/estilos/local-large.css">
+    <script src="S03/scripts/local.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <h1>
+        <img src="S03/imagens/bandeira.webp"
+             alt="Bandeira da República Dominicana"
+             class="flag">
+        República Dominicana
+    </h1>
+</header>
+<div class="flag-line"></div>
+<main>
+    <section class="hero">
+        <picture>
+            <source
+                media="(min-width:768px)"
+                srcset="S03/imagens/republica-dominicana-large.webp">
+
+            <img
+                src="S03/imagens/republica-dominicana-small.webp"
+                alt="Beach in Punta Cana, Dominican Republic"
+                width="1200"
+                height="700">
+
+        </picture>
+        <section class="card info">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Área:</strong> 48.671 km²</li>
+                <li><strong>População:</strong> 11,5 milhões</li>
+                <li><strong>Capital:</strong> Santo Domingo</li>
+                <li><strong>Idioma:</strong> Espanhol</li>
+                <li><strong>Moeda:</strong> Peso Dominicano (DOP)</li>
+                <li><strong>Fuso Horário:</strong> UTC −4</li>
+                <li><strong>Código de Discagem:</strong> +1</li>
+                <li><strong>Domínio de Internet:</strong> .do</li>
+            </ul>
+
+        </section>
+        <section class="card weather">
+            <h2>Weather</h2>
+            <img
+                class="weather-icon"
+                src="S03/imagens/weather.svg"
+                alt="Weather Icon"
+                width="70"
+                height="70">
+
+            <ul>
+            <li><strong>Temperatura:</strong> 8°C</li>
+            <li><strong>Condição:</strong> Parcialmente nublado</li>
+            <li><strong>Velocidade do vento:</strong> 12 km/h</li>
+            <li><strong>Umidade:</strong> 70%</li>
+            <li><strong>Sensação térmica:</strong>
+                    <span id="windchill"></span>
+                </li>
+            </ul>
+        </section>
+    </section>
+</main>
+<footer>
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        🌴
+        Jazi de Araujo
+        🌴
+        República Dominicana
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
