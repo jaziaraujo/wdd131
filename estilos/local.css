@@ -1,0 +1,125 @@
+:root {
+    --primary: #002D62;
+    --secondary: #CE1126;
+    --accent: #FFFFFF;
+    --light: rgba(255, 255, 255, 0.90);
+    --background: #eef4ec;
+    --text: #222;
+    --shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 2.8rem;
+}
+
+.flag {
+    width: 55px;
+    height: auto;
+}
+
+.flag-line {
+    height: 10px;
+    background: var(--secondary);
+}
+
+.hero {
+    position: relative;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 5.5rem 1.5rem 1.5rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.30);
+}
+
+.card h2 {
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    width: 260px;
+    background-color: var(--secondary);
+    color: #FFFFFF;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+.card li {
+    margin-bottom: .7rem;
+    line-height: 1.5;
+    font-size: .95rem;
+}
+
+.card strong {
+    color: var(--primary);
+}
+
+.weather-icon {
+    display: block;
+    margin: 1rem auto;
+}
+
+.info,
+.weather {
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+footer p:first-child {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
