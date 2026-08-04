@@ -85,7 +85,6 @@ const templos = [
 const container = document.querySelector(".res-grid");
 const tituloPagina = document.querySelector("#titulo-pagina");
 
-
 function renderizarTemplos(lista) {
   container.innerHTML = "";
 
@@ -108,7 +107,7 @@ function renderizarTemplos(lista) {
     const imagem = document.createElement("img");
     imagem.src = templo.urlDaImagem;
     imagem.alt = `Templo de ${templo.nomeDoTemplo}`;
-    imagem.loading = "lazy";
+    imagem.loading = "lazy"; 
     imagem.width = 400;
     imagem.height = 250;
 

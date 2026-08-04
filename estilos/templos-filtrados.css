@@ -58,7 +58,7 @@ header h1 {
     content: "✖";
 }
 
-nav.navigation {
+.navigation {
     display: flex;
     flex-direction: column;
     width: 100%;

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Álbum de Templos</title>
-    <meta name="description" content="Álbum de imagens, contendo templos ao redor do mundo">
+    <title>WDD 131 - Álbum de Templos Filtrados</title>
+    <meta name="description" content="Álbum de imagens e dados detalhados de templos ao redor do mundo com filtragem dinâmica.">
     <meta name="author" content="Jazilene Barbosa Silva de Araujo">
     <link rel="stylesheet" href="estilos/templos-filtrados.css">
     <script src="scripts/templos-filtrados.js" defer></script>
@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -21,18 +20,18 @@
         <h1>Álbum do Templo</h1>
         <button id="menu" aria-label="Abrir Menu"></button>
         <nav class="navigation">
-            <a href="#" id="inicio">Página Inicial</a>
-            <a href="#" id="antigo">Antigo</a>
-            <a href="#" id="novo">Novo</a>
-            <a href="#" id="grande">Grande</a>
-            <a href="#" id="pequeno">Pequeno</a>
+            <a href="#" id="inicio" class="active">Página Inicial</a>
+            <a href="#" id="antigos">Antigo</a>
+            <a href="#" id="novos">Novo</a>
+            <a href="#" id="grandes">Grande</a>
+            <a href="#" id="pequenos">Pequeno</a>
         </nav>
     </div>
 </header>
+
 <main>
-    <h2>Inicio</h2>
-   <div class="res-grid">
-   </div>
+    <h2 id="titulo-pagina">Página Inicial</h2>
+    <div class="res-grid"></div>
 </main>
 
 <footer>
@@ -45,4 +44,3 @@
 </footer>
 </body>
 </html>
-
