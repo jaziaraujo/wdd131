@@ -58,7 +58,7 @@ header h1 {
     content: "✖";
 }
 
-.navigation {
+nav.navigation {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -97,14 +97,12 @@ main h2 {
     color: var(--primary);
 }
 
-/* Grid de Cartões de Templos */
 .res-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-/* Estilo do Cartão */
 .temple-card {
     background: var(--white);
     border-radius: 12px;
@@ -161,7 +159,6 @@ footer p {
     margin: .4rem;
 }
 
-/* Layout para Desktop */
 @media (min-width: 768px) {
     #menu {
         display: none;
