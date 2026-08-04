@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Álbum de Templos Filtrados</title>
+    <meta name="description" content="Álbum de imagens e dados detalhados de templos ao redor do mundo com filtragem dinâmica.">
+    <meta name="author" content="Jazilene Barbosa Silva de Araujo">
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <script src="scripts/templos-filtrados.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <h1>Álbum do Templo</h1>
+        <button id="menu" aria-label="Abrir Menu"></button>
+        <nav class="navigation">
+            <a href="#" id="inicio" class="active">Página Inicial</a>
+            <a href="#" id="antigos">Antigos</a>
+            <a href="#" id="novos">Novos</a>
+            <a href="#" id="grandes">Grandes</a>
+            <a href="#" id="pequenos">Pequenos</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2 id="titulo-pagina">Página Inicial</h2>
+    <div class="res-grid"></div>
+</main>
+
+<footer>
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        | Jazi de Araujo | Brasil
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
+
