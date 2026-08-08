@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         elementoContador.textContent = numAvaliacoes;
     }
 
-    const anoElemento = document.getElementById("anoAtual");
-    if (anoElemento) {
-        anoElemento.textContent = new Date().getFullYear();
-    }
+    const currentYear = document.querySelector("#currentyear");
+    const lastModified = document.querySelector("#lastModified");
+
+    currentYear.textContent = new Date().getFullYear();
+
+    const modifiedDate = new Date(document.lastModified);
+    lastModified.textContent = `Última modificação: ${modifiedDate.toLocaleString("pt-BR")}`
 });
