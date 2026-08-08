@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #6d28d9;       /* Roxo vibrante para botões e destaques */
+    --primary-hover: #5b21b6;       /* Roxo escuro para o efeito hover */
+    --star-color: #cbd5e1;          /* Cinza/lilás para estrelas inativas */
+    --star-active: #f59e0b;         /* Amarelo/Dourado (ótimo contraste com roxo) */
+    --bg-color: #f5f3ff;            /* Lilás bem suave para o fundo da página */
+    --card-bg: #ffffff;             /* Fundo branco limpo para os cards */
+    --text-color: #2e1065;          /* Roxo ultra escuro para leitura e alto contraste */
+    --border-color: #ddd6fe;        /* Bordas suaves em tom lilás */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header {
+  background-color: var(--star-color);
+  color: var(--bg-light);
+  padding: 35px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(61, 35, 20, 0.15);
+}
+
+main {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.campo-form {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.obrigatorio {
+    color: #d90429;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.estrelas-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+.estrelas-container input[type="radio"] {
+    display: none;
+}
+
+.estrelas-container label {
+    cursor: pointer;
+    color: var(--border-color);
+    margin-bottom: 0;
+    padding: 0 5px;
+    transition: color 0.2s;
+}
+
+.estrelas-container label:hover,
+.estrelas-container label:hover ~ label,
+.estrelas-container input[type="radio"]:checked ~ label {
+    color: var(--star-active);
+}
+
+.checkbox-grupo label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+.mensagem-confirmacao {
+    text-align: center;
+    padding: 20px;
+}
+
+.contador-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Produto</title>
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Avaliação de Produto</h1>
+    </header>
+
+    <main>
+        <form action="avaliacao.html" method="get" class="form-avaliacao">
+            
+            <div class="campo-form">
+                <label for="produto">Nome do Produto <span class="obrigatorio">*</span></label>
+                <select id="produto" name="produto" required>
+                    <option value="" disabled selected>Selecione um Produto...</option>
+                </select>
+            </div>
+
+            <fieldset class="campo-form grupo-estrelas">
+                <legend>Classificação Geral <span class="obrigatorio">*</span></legend>
+                <div class="estrelas-container">
+                    <input type="radio" id="estrela5" name="classificacao" value="5" required>
+                    <label for="estrela5" title="5 estrelas">☆</label>
+
+                    <input type="radio" id="estrela4" name="classificacao" value="4">
+                    <label for="estrela4" title="4 estrelas">☆</label>
+
+                    <input type="radio" id="estrela3" name="classificacao" value="3">
+                    <label for="estrela3" title="3 estrelas">☆</label>
+
+                    <input type="radio" id="estrela2" name="classificacao" value="2">
+                    <label for="estrela2" title="2 estrelas">☆</label>
+
+                    <input type="radio" id="estrela1" name="classificacao" value="1">
+                    <label for="estrela1" title="1 estrela">☆</label>
+                </div>
+            </fieldset>
+
+            <div class="campo-form">
+                <label for="dataInstalacao">Data de Instalação <span class="obrigatorio">*</span></label>
+                <input type="date" id="dataInstalacao" name="dataInstalacao" required>
+            </div>
+
+            <fieldset class="campo-form">
+                <legend>Recursos Úteis (Marque todas as opções aplicáveis):</legend>
+                <div class="checkbox-grupo">
+                    <label><input type="checkbox" id="facilUso" name="recursos" value="facilUso"> Facilidade de Uso</label>
+                    <label><input type="checkbox" id="durabilidade" name="recursos" value="durabilidade"> Durabilidade</label>
+                    <label><input type="checkbox" id="desempenho" name="recursos" value="desempenho"> Desempenho</label>
+                    <label><input type="checkbox" id="design" name="recursos" value="design"> Design/Aparência</label>
+                </div>
+            </fieldset>
+
+            <div class="campo-form">
+                <label for="avaliacaoEscrita">Avaliação Escrita (Opcional):</label>
+                <textarea id="avaliacaoEscrita" name="avaliacaoEscrita" rows="4" placeholder="Escreva sua opinião sobre o produto..."></textarea>
+            </div>
+
+            <div class="campo-form">
+                <label for="nomeUsuario">Seu Nome (Opcional):</label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Ex: João Silva">
+            </div>
+
+            <div class="campo-form">
+                <input type="submit" value="Enviar Avaliação" class="btn-submit">
+            </div>
+        </form>
+    </main>
+
+<footer>
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        | Jazi de Araujo | Brasil
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
