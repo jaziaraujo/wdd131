@@ -1,10 +1,10 @@
 
 :root {
-  --color-primary: #3D2314;   /* Castanho Cacau */
-  --color-secondary: #C87D55; /* Caramelo Terracota */
-  --color-accent: #E2A03F;    /* Amarelo Mel/Favo */
-  --color-text: #2C221E;      /* Marrom Café Escuro */
-  --color-bg: #f8e5c7;        /* Creme / Marfim */
+  --color-primary: #3D2314;
+  --color-secondary: #C87D55; 
+  --color-accent: #E2A03F;
+  --color-text: #2C221E; 
+  --color-bg: #f8e5c7;    
   --color-white: #FFFFFF;
   --color-border: #E2D8CD;  
 
