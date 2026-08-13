@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confeitaria Favo - Doces artesanais, bolos personalizados e pronta-entrega.">
+    <meta name="author" content="Jazilene Barbosa Silva de Araujo">
+    <title>Confeitaria Favo</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos/confeitaria-favo.css">
+    <script src="scripts/confeitaria-favo.js" defer></script>
+  </head>
+  <body>
+
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="/imagens/logo-favo.webp" alt="FAVO Confeitaria" class="logo-img">
+    </div>
+    <nav class="main-nav" aria-label="Navegação Principal">
+      <ul>
+        <li><a href="#inicio" class="active">Principal</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="page-section">
+      <div class="hero-section">
+        <div class="hero-image">
+          <img src="https://plus.unsplash.com/premium_photo-1681826507324-0b3c43928753?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="Confeitaria-loja">
+        </div>
+      </div>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Doce como mel &amp; Lindo como arte</h1>
+          <p>Bolos decorados, doces finos e opções para pronta-entrega feitos com ingredientes selecionados.</p>
+          <a href="#produtos" class="btn btn-accent">Ver Cardápio</a>
+        </div>
+      </div>
+
+      <div class="features container">
+        <div class="feature-card">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1620525429871-81919b5bd668?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                 alt="Bolo de casamento" 
+                 loading="lazy" width="300" height="200">
+          </div>
+          <h2>Bolos Personalizados</h2>
+          <p>Desenvolvemos sabores e decorações exclusivas para o seu casamento ou aniversário. Pedidos com antecedência mínima de 48h.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1667575633611-a8a5f04dece4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                 alt="macarons" 
+                 loading="lazy" width="300" height="200">
+          </div>
+          <h2>Doces Finos</h2>
+          <p>Bombons, brigadeiros gourmet e macarons com finalização delicada para encantar seus convidados em qualquer evento.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                 alt="coockies" 
+                 loading="lazy" width="300" height="200">
+          </div>
+          <h2>Pronta-Entrega</h2>
+          <p>Bateu vontade de um doce hoje? Acompanhe no site as opções disponíveis na loja física para retirada imediata.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="container page-content page-section">
+      <h1>Nosso Cardápio</h1>
+      <p>Consulte nossos produtos para encomendas e verifique a disponibilidade para retirada hoje no balcão.</p>
+
+      <div class="filter-controls">
+        <button class="btn-filter active" data-category="todos">Todos</button>
+        <button class="btn-filter" data-category="bolos">Bolos</button>
+        <button class="btn-filter" data-category="doces">Doces Finos</button>
+        <button class="btn-filter" data-category="pronta-entrega">Disponível Hoje</button>
+      </div>
+
+      <div id="products-grid" class="products-grid">
+      </div>
+    </section>
+
+    <section id="contato" class="container page-content page-section">
+      <h1>Solicite seu Pedido ou Encomenda</h1>
+      <p>Preencha os campos abaixo para cotar seu bolo de casamento, aniversário ou evento especial. Respondemos em até 24 horas úteis.</p>
+
+      <div class="contact-wrapper">
+        <form id="order-form" class="custom-form" novalidate>
+          <div class="form-group">
+            <label for="cliente-nome">Nome Completo *</label>
+            <input type="text" id="cliente-nome" name="nome" required placeholder="Seu nome completo">
+          </div>
+
+          <div class="form-group">
+            <label for="cliente-email">E-mail de Contato *</label>
+            <input type="email" id="cliente-email" name="email" required placeholder="seuemail@exemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-servico">Tipo de Solicitação *</label>
+            <select id="tipo-servico" name="servico" required>
+              <option value="">Selecione uma opção...</option>
+              <option value="Bolo de Casamento">Bolo de Casamento</option>
+              <option value="Bolo de Aniversário">Bolo de Aniversário</option>
+              <option value="Doces Finos para Eventos">Doces Finos para Eventos</option>
+              <option value="Reserva de Pronta-Entrega">Reserva de Pronta-Entrega</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="data-evento">Data do Evento / Retirada *</label>
+            <input type="date" id="data-evento" name="data" required>
+          </div>
+
+          <div class="form-group">
+            <label for="observacoes">Detalhes do Pedido (Sabores, Tamanho, Pessoas)</label>
+            <textarea id="observacoes" name="observacoes" rows="5" placeholder="Descreva o tamanho, tema ou preferências de sabor..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-full">Enviar Solicitação</button>
+        </form>
+
+        <div id="form-feedback" class="feedback-box hidden" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container container">
+      <div class="footer-branding">
+        <div class="logo-small">
+          <img src="/imagens/logo-favo.webp" alt="FAVO Confeitaria" class="logo-img">
+        </div>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="icon-btn">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/seunumero" target="_blank" aria-label="WhatsApp" class="icon-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://maps.google.com" target="_blank" aria-label="Localização" class="icon-btn">
+            <i class="fa-solid fa-location-dot"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p><strong>Horário de Funcionamento:</strong> Terça a Sábado, das 09h às 19h | Fechado aos Domingos e Feriados</p>
+        <p><strong>Endereço:</strong> Alameda das Orquídeas, 2311 - Centro.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
