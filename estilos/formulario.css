@@ -1,12 +1,13 @@
+
 :root {
-    --primary-color: #6d28d9;       /* Roxo vibrante para botões e destaques */
-    --primary-hover: #5b21b6;       /* Roxo escuro para o efeito hover */
-    --star-color: #cbd5e1;          /* Cinza/lilás para estrelas inativas */
-    --star-active: #f59e0b;         /* Amarelo/Dourado (ótimo contraste com roxo) */
-    --bg-color: #f5f3ff;            /* Lilás bem suave para o fundo da página */
-    --card-bg: #ffffff;             /* Fundo branco limpo para os cards */
-    --text-color: #2e1065;          /* Roxo ultra escuro para leitura e alto contraste */
-    --border-color: #ddd6fe;        /* Bordas suaves em tom lilás */
+--bg-color: #f8f7fc;            /* Branco levemente frio/violáceo para não cansar os olhos */
+  --card-bg: #ffffff;             /* Branco puro para destacar os cards do fundo */
+  --text-color: #0f0c1b;          /* Roxo quase preto para leitura extremamente nítida */
+  --primary-color: #581c87;       /* Roxo escuro e intenso (Vibrant Deep Purple) para destaques */
+  --primary-hover: #3b0764;       /* Roxo ultraprofundo para o efeito hover */
+  --star-color: #cbd5e1;          /* Cinza claro neutro para estrelas inativas */
+  --star-active: #d97706;         /* Âmbar/Dourado quente e escuro para alto contraste no fundo claro */
+  --border-color: #e2e8f0;        /* Borda sutil e limpa para delimitar as seções */
 }
 
 * {
@@ -32,8 +33,8 @@ header, footer {
 }
 
 header {
-  background-color: var(--star-color);
-  color: var(--bg-light);
+  background-color: var(--primary-hover);
+  color: var(--bg-color);
   padding: 35px 20px;
   text-align: center;
   border-radius: 12px;
@@ -74,7 +75,7 @@ label {
 }
 
 .obrigatorio {
-    color: #d90429;
+    color: #3a20a3;
 }
 
 input[type="text"],
@@ -108,7 +109,7 @@ textarea:focus {
 
 .estrelas-container label {
     cursor: pointer;
-    color: var(--border-color);
+    color: var(--primary-color);
     margin-bottom: 0;
     padding: 0 5px;
     transition: color 0.2s;
